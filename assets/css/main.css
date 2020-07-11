@@ -42,7 +42,7 @@ a:hover {
 	color: #fca311 !important;
 }
 .header-text {
-	margin-top: 15rem;
+	margin-top: 5rem;
 }
 
 .text-header-fixed {
@@ -125,7 +125,9 @@ a:hover {
 	font-size: 1rem;
 }
 /* gallery */
-
+.box {
+		z-index: -10000px !important;
+}
 .box img {
 	height: 100%;
 	width: auto;
@@ -134,7 +136,7 @@ a:hover {
 
 .opacity {
 	opacity: 0.5;
-	z-index: -100px;
+	z-index: -1px;
 }
 
 .pangkat {
@@ -161,3 +163,9 @@ a:hover {
 .sup img {
 	height: .9rem;
 }
+
+/* animation */
+
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
